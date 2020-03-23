@@ -1,10 +1,10 @@
 <template>
   <div class="ui secondary pointing menu">
-    <a class="active item" href="#">Vue-Go</a>
+    <router-link to="/" class="active item">Vue-Go</router-link>
     <div class="right menu">
       <div class="right-navigation">
         <a class="item" href="#">Users</a>
-        <a class="item" href="#">About</a>
+        <router-link class="item" to="/about">About</router-link>
       </div>
     </div>
   </div>
