@@ -12,8 +12,7 @@ const actions = {
     fetchUsers: async ({ commit }) => {
         const { data } = await axios.get('http://localhost:5000/get_users');
         console.log("data", data);
-        console.log(commit);
-        // commit("setUsers", data);
+        commit("setUsers", data);
     }
 }
 
