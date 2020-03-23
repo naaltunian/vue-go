@@ -1,6 +1,7 @@
 <template>
     <div>
-        About
+        <h1>About</h1>
+        <p>This project was made in order to practice Vue on the frontend and Go on the backend.</p>
     </div>
 </template>
 
@@ -9,7 +10,3 @@ export default {
     name: "About"
 }
 </script>
-
-<style scoped>
-
-</style>

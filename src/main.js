@@ -3,6 +3,7 @@ import App from './App.vue';
 import VueRouter from 'vue-router';
 import store from './store/index';
 import About from './components/Pages/About.vue';
+import UserList from './components/Users/UserList';
 
 Vue.config.productionTip = false;
 
@@ -14,6 +15,10 @@ export const router = new VueRouter({
     {
       path: "/about",
       component: About
+    },
+    {
+      path: "/",
+      component: UserList
     }
   ]
 });

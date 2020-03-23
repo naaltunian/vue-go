@@ -10,8 +10,10 @@ const getters = {
 
 const actions = {
     fetchUsers: async ({ commit }) => {
-        const { data } = axios.get('http://localhost:5000/get_users');
-        commit("setUsers", data);
+        const { data } = await axios.get('http://localhost:5000/get_users');
+        console.log("data", data);
+        console.log(commit);
+        // commit("setUsers", data);
     }
 }
 
