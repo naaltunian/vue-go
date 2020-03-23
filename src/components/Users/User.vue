@@ -1,7 +1,7 @@
 <template>
     <div>
         {{$route.params.id}}
-        {{ user }}
+        {{ user.name }}
     </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         getUser() {
-            this.user = this.$store.getters['getUser'](this.$route.params.id)
+            this.user = this.$store.getters['getUser'](this.$route.params.id);
         }
     },
     created() {

@@ -20,7 +20,6 @@ export default {
     props: ["user"],
     computed: {
         dateCreated: function() {
-            console.log(new Date(this.user.dateCreated))
             return new Date(this.user.dateCreated);
         }
     }
