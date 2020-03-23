@@ -1,7 +1,7 @@
 <template>
     <div class="ui card">
         <div class="content">
-            <a class="header">{{ user.name }}</a>
+            <router-link :to="`/user/${user._id}`" class="header">{{ user.name }}</router-link>
             <div class="meta">
                 <span class="date">{{ `${dateCreated.getMonth()}-${dateCreated.getDay()}-${dateCreated.getFullYear()}` }}</span>
             </div>
@@ -20,6 +20,7 @@ export default {
     props: ["user"],
     computed: {
         dateCreated: function() {
+            console.log(new Date(this.user.dateCreated))
             return new Date(this.user.dateCreated);
         }
     }

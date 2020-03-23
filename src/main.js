@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import store from './store/index';
 import About from './components/Pages/About.vue';
 import UserList from './components/Users/UserList';
+import User from './components/Users/User';
 
 Vue.config.productionTip = false;
 
@@ -19,6 +20,10 @@ export const router = new VueRouter({
     {
       path: "/",
       component: UserList
+    },
+    {
+      path: "/user/:id",
+      component: User
     }
   ]
 });
