@@ -5,6 +5,7 @@ import store from './store/index';
 import About from './components/Pages/About.vue';
 import UserList from './components/Users/UserList';
 import User from './components/Users/User';
+import AddUser from './components/Users/AddUser';
 
 Vue.config.productionTip = false;
 
@@ -24,6 +25,10 @@ export const router = new VueRouter({
     {
       path: "/user/:id",
       component: User
+    },
+    {
+      path: "/add_user",
+      component: AddUser
     }
   ]
 });
